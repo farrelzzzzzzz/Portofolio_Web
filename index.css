@@ -1,0 +1,476 @@
+*{
+    text-decoration: none;   
+    
+}
+
+body {
+    font-family: gotham;
+    font-size: 10px;
+    margin: 0; 
+    background-image: url('img/mask2.png' );
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size: contain;
+    height: 800px;
+    
+}
+
+@keyframes naik{
+    from{ 
+        opacity: 0 ;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 2;
+        transform: translateY(0px);
+    }
+}
+
+.call{
+    font-family: 'Shenttpuro';
+    src: url('path/to/Shenttpuro.ttf') format('truetype');
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+    animation: naik 1.5s ease-out;
+}
+.navi {
+    padding: 10px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 3.5);
+}
+
+
+
+.profil img {
+    float: left;
+    padding: 10px; 
+    border-radius: 50px;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profil a{
+    
+    font-size: 25px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #ff0000;
+    text-decoration: none;
+    margin-right: 50px;
+    display: flex; 
+    align-items: center; 
+    transition: color 0.05s;
+}
+.profil a h1 {
+    font-weight: lighter;
+    font-size: 15px; 
+    color: rgb(255, 230, 0); 
+    margin-left: 10px; 
+    
+    
+}
+
+.profil a :hover {
+    color: white;
+
+}
+
+.capt{
+    
+    font-size: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-right: 40px;
+    display: flex; 
+    align-items: center; 
+    transition: color 0.05s;
+}
+
+.capt h1{
+    color: rgb(255, 0, 0);
+    transition: color 0.05s;
+}
+
+.capt h1:hover{
+    color: rgb(255, 255, 255);
+    animation: color 12s ease-in-out infinite;
+}
+
+
+
+
+.capt:hover{
+   
+    background:linear-gradient(45deg,#949494,#ff0000,#313131,#000000);
+    background-size: 800% 800%;
+    animation: color 12s ease-in-out infinite;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li:last-child {
+    margin-right: 0; 
+}
+
+.menu li a {
+    
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 65, 65);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.25s;
+}
+
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,#949494,#ff0000,#313131,#000000);
+    background-size: 500% 500%;
+    animation: color 12s ease-in-out infinite;
+}
+.konten{
+    font-size: 30px;
+    color: white;
+    padding: 10px 30px;
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    height: 400px;
+    font-weight: auto;
+    animation: naik 1.5s ease-out;
+    
+
+}
+
+
+.layer-d{
+   
+    width: auto;
+    display: flex;
+    padding: 5px;
+    background-color: #2e2e2e;
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+.content-d{
+    
+    border-left: 5px solid rgb(255, 0, 0);
+    border-right: 5px solid rgb(255, 0, 0);
+    font-size: 15px;
+    padding: 20px 30px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
+}
+.content-d h1{
+    margin: auto;
+    margin-right: 150px;
+    margin-left: 150px;
+    
+}
+.pg-l{
+    
+ margin: auto;
+ font-size: 30px;
+ display: flex;
+ background-color: rgb(28, 28, 28);
+ height: 50%; 
+
+    
+}
+.pg-l p1{
+    border-bottom: 5px solid #808080;
+    padding: 100px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    text-align: left;
+
+}
+
+.pg-l p2{
+    
+    padding: 100px;
+    font-size:  15px;
+    color: white;
+    display: flex;
+    text-align: left;
+
+}
+
+.pg-l p3{
+    border-bottom: 5px solid #808080;
+    border-left: white;
+    padding: 100px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: left;
+
+}
+
+.cont-skill{
+    border-bottom: 5px solid #000000;
+    height: 60%;
+    background-color: rgb(28, 28, 28);
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.cont-skill h1{
+    margin: auto;
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+.cont-skill p{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    height: 70px;
+    
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; 
+    
+    
+}
+
+.tabel-3d {
+    background-color: #343434; 
+    border-radius: 20px; 
+    padding: 30px;
+    margin: auto;
+    width: 30px;
+    width: fit-content;
+    box-shadow: 0 30px 40px  rgba(0, 0, 0, 3.5);
+   
+    transition: color 0.25s;
+   
+}
+
+.tabel-3d:hover {
+    background:linear-gradient(45deg,#ff0000,#ff0000,#ff0000,#ff0000);
+    animation: color 12s ease-in-out infinite;
+
+}
+
+.tabel-3d td{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+   
+   
+}
+
+.tabel-3d tr td i {
+    
+    color: white;
+    font-size: 80px; 
+    vertical-align: middle; 
+    transition: color 0.25s;
+    
+}
+
+.tabel-3d tr td i:hover {
+    color: rgb(255, 242, 0);
+    font-size: 80px; 
+    vertical-align: middle; 
+    animation: color 12s ease-in-out infinite;
+}
+
+.container-profil{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    height: 50%;
+    background-color: #000000; 
+}
+
+@keyframes foto{
+    from{ 
+        opacity: 0 ;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 2;
+        transform: translateY(0px);
+    }
+}
+.foto{
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: naik 1.5s ease-out;
+}
+
+.foto-conta{
+    
+    width: auto;
+    display: flex;
+    padding: 5px;
+    background-color: #1d1d1d;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.foto-isi1{
+    
+    
+    padding: 10px ;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    color: rgb(255, 157, 0);
+   
+   
+    
+   
+}
+
+.foto-isi1 h1{
+    font-size: 30px;
+}
+
+.forto-container{
+    height: 60%;
+    width: auto;
+    display: flex;
+    padding: 5px;
+    background-color: #ac0000;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.forto-isi h1{
+    font-size: 30px;
+    color: white;
+}
+
+.forto-isi{
+    display: inline;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.foto-contb{
+    margin-bottom: 50px; 
+    height: auto;
+    height: 80%;
+    width: auto;
+    display: flex;
+    padding: 5px;
+    background-color: #0e0e0e;
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+.foto-isi2{
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: #161616;
+    font-size: 20px;
+    padding: 30px 60px;
+    display: flex;
+    text-align: left;
+    color: rgb(255, 153, 0);
+    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
+   
+}
+
+
+
+
+/* send email */
+
+.sosial h1{
+    font-size: 35px;
+    color: rgb(255, 0, 0);
+}
+.sosial i{
+    color: rgb(255, 149, 0);
+}
+.sosial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+    margin-right: 30%;
+}
+
+.sosial a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px; 
+    transition: color 0.25s;
+}
+
+.sosial a:hover{
+    color: orange;
+    animation: color 12s ease-in-out infinite;
+}
+
+
+footer {
+    background-color: #1d1d1d;
+    color: rgb(255, 149, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    left: 0;
+    font-size: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+}
