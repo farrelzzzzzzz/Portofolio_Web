@@ -1,6 +1,7 @@
 *{
     text-decoration: none;   
     
+    
 }
 
 body {
@@ -46,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    flex-wrap: wrap;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 3.5);
 }
 
@@ -268,9 +270,10 @@ body {
 
 .table-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 20px; 
+    flex-wrap: wrap;
     
     
 }
@@ -386,8 +389,9 @@ body {
     display: flex;
     padding: 5px;
     background-color: #ac0000;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
+    flex-wrap: wrap;
 }
 
 .forto-isi h1{
