@@ -1,37 +1,35 @@
-*{
-    text-decoration: none;   
-    
-    
+* {
+    text-decoration: none;
 }
 
 body {
     font-family: gotham;
     font-size: 10px;
     margin: 0; 
-    background-image: url('img/mask2.png' );
+    background-color: #0e0e0e;
+    background-image: url('img/mask2.png');
     background-position: center;
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
     background-size: contain;
     height: 800px;
-    
 }
 
-@keyframes naik{
-    from{ 
-        opacity: 0 ;
+@keyframes naik {
+    from { 
+        opacity: 0;
         transform: translateY(30px);
     }
-    to{
-        opacity: 2;
+    to {
+        opacity: 1;
         transform: translateY(0px);
     }
 }
 
-.call{
+.call {
     font-family: 'Shenttpuro';
     src: url('path/to/Shenttpuro.ttf') format('truetype');
     font-size: 60px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 30px 40px;
     margin: auto;
     text-align: center;
@@ -41,90 +39,84 @@ body {
     font-weight: bold;
     animation: naik 1.5s ease-out;
 }
+
 .navi {
-    padding: 10px;
-    background-color: rgb(43, 43, 43);
+   
+    margin: auto;
+    padding: 10px 50px;
+    background-color: #2b2b2b;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 3.5);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
 }
-
-
 
 .profil img {
     float: left;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 50px;
 }
 
-.profil{
+.profil {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.profil a{
-    
+.profil a {
     font-size: 25px;
     padding: 10px 30px;
     font-weight: bold;
     color: #ff0000;
     text-decoration: none;
     margin-right: 50px;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     transition: color 0.05s;
 }
+
 .profil a h1 {
     font-weight: lighter;
-    font-size: 15px; 
-    color: rgb(255, 230, 0); 
-    margin-left: 10px; 
-    
-    
+    font-size: 15px;
+    color: #ffe600;
+    margin-left: 10px;
 }
 
-.profil a :hover {
+.profil a:hover {
     color: white;
-
 }
 
-.capt{
-    
+.capt {
     font-size: 10px;
     padding: 10px 15px;
     font-weight: bold;
     background-color: #ffffff;
     border-radius: 30px;
     margin-right: 40px;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     transition: color 0.05s;
 }
 
-.capt h1{
-    color: rgb(255, 0, 0);
+.capt h1 {
+    color: #ff0000;
     transition: color 0.05s;
 }
 
-.capt h1:hover{
-    color: rgb(255, 255, 255);
+.capt h1:hover {
+    color: #fff;
     animation: color 12s ease-in-out infinite;
 }
 
-
-
-
-.capt:hover{
-   
-    background:linear-gradient(45deg,#949494,#ff0000,#313131,#000000);
+.capt:hover {
+    background: linear-gradient(45deg, #949494, #ff0000, #313131, #000000);
     background-size: 800% 800%;
     animation: color 12s ease-in-out infinite;
 }
 
 .menu {
+    justify-content: right;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -136,14 +128,13 @@ body {
 }
 
 .menu li:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .menu li a {
-    
     padding: 10px 30px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(65, 65, 65);
+    color: #fff;
+    background-color: #414141;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -152,12 +143,13 @@ body {
 }
 
 .menu li a:hover {
-    color: rgb(255, 255, 255);
-    background:linear-gradient(45deg,#949494,#ff0000,#313131,#000000);
+    color: #fff;
+    background: linear-gradient(45deg, #949494, #ff0000, #313131, #000000);
     background-size: 500% 500%;
     animation: color 12s ease-in-out infinite;
 }
-.konten{
+
+.konten {
     font-size: 30px;
     color: white;
     padding: 10px 30px;
@@ -168,183 +160,114 @@ body {
     height: 400px;
     font-weight: auto;
     animation: naik 1.5s ease-out;
-    
-
 }
 
-
-.layer-d{
-   
-    width: auto;
-    display: flex;
-    padding: 5px;
+.layer-d {
+    
+    margin: auto;
+    padding: 10px 20px;
     background-color: #2e2e2e;
-    justify-content: space-between; 
-    align-items: center; 
-    
+    justify-content: space-between;
+    align-items: center;
 }
-.content-d{
+
+
+
+
+.pg-l {
     
-    border-left: 5px solid rgb(255, 0, 0);
-    border-right: 5px solid rgb(255, 0, 0);
-    font-size: 15px;
-    padding: 20px 30px;
+    justify-content: center;
     margin: auto;
+    font-size: 30px;
     display: flex;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
+    background-color: #1c1c1c;
+    height: 50%;
 }
-.content-d h1{
+
+
+
+.cont-skill {
+    
     margin: auto;
-    margin-right: 150px;
-    margin-left: 150px;
-    
-}
-.pg-l{
-    
- margin: auto;
- font-size: 30px;
- display: flex;
- background-color: rgb(28, 28, 28);
- height: 50%; 
-
-    
-}
-.pg-l p1{
-    border-bottom: 5px solid #808080;
-    padding: 100px;
-    font-size: 15px;
-    color: white;
-    display: flex;
-    text-align: left;
-
-}
-
-.pg-l p2{
-    
-    padding: 100px;
-    font-size:  15px;
-    color: white;
-    display: flex;
-    text-align: left;
-
-}
-
-.pg-l p3{
-    border-bottom: 5px solid #808080;
-    border-left: white;
-    padding: 100px;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    text-align: left;
-
-}
-
-.cont-skill{
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #000;
     height: 60%;
-    background-color: rgb(28, 28, 28);
-    width: auto;
-    margin: auto;
+    background-color: #1c1c1c;
     text-align: center;
     padding: 20px;
 }
 
-.cont-skill h1{
+.cont-skill h1 {
     margin: auto;
-    color: rgb(255, 0, 0);
+    color: #ff0000;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
 
-.cont-skill p{
-    color: white;
-    font-size: 15px;
-    margin-bottom: 20px;
-    height: 70px;
-    
-}
 
 .table-container {
+    
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; 
+    margin-top: 20px;
     flex-wrap: wrap;
-    
-    
 }
 
 .tabel-3d {
-    background-color: #343434; 
-    border-radius: 20px; 
+    background-color: #343434;
+    border-radius: 20px;
     padding: 30px;
     margin: auto;
-    width: 30px;
     width: fit-content;
-    box-shadow: 0 30px 40px  rgba(0, 0, 0, 3.5);
-   
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.35);
     transition: color 0.25s;
-   
 }
 
 .tabel-3d:hover {
-    background:linear-gradient(45deg,#ff0000,#ff0000,#ff0000,#ff0000);
+    background: linear-gradient(45deg, #ff0000, #ff0000, #ff0000, #ff0000);
     animation: color 12s ease-in-out infinite;
-
 }
 
-.tabel-3d td{
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    padding: 20px;
-    border-bottom: 1px solid rgb(110, 110, 110);
-   
-   
-}
+
 
 .tabel-3d tr td i {
-    
     color: white;
-    font-size: 80px; 
-    vertical-align: middle; 
+    font-size: 80px;
+    vertical-align: middle;
     transition: color 0.25s;
-    
 }
 
 .tabel-3d tr td i:hover {
-    color: rgb(255, 242, 0);
-    font-size: 80px; 
-    vertical-align: middle; 
+    color: #fff200;
+    font-size: 80px;
+    vertical-align: middle;
     animation: color 12s ease-in-out infinite;
 }
 
-.container-profil{
-    
+.container-profil {
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 0;
     height: 50%;
-    background-color: #000000; 
+    background-color: #000;
 }
 
-@keyframes foto{
-    from{ 
-        opacity: 0 ;
+@keyframes foto {
+    from { 
+        opacity: 0;
         transform: translateY(30px);
     }
-    to{
-        opacity: 2;
+    to {
+        opacity: 1;
         transform: translateY(0px);
     }
 }
-.foto{
-    
+
+.foto {
     display: block;
     margin: auto;
     margin-bottom: 30px;
@@ -352,129 +275,271 @@ body {
     animation: naik 1.5s ease-out;
 }
 
-.foto-conta{
+.foto-conta {
     
-    width: auto;
+    margin: auto;
     display: flex;
     padding: 5px;
     background-color: #1d1d1d;
-    justify-content: space-between; 
-    align-items: center; 
-    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
-    
-    
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.foto-isi1{
-    
-    
-    padding: 10px ;
+.foto-isi1 {
+    padding: 10px;
     margin: auto;
     display: flex;
     text-align: center;
-    color: rgb(255, 157, 0);
-   
-   
-    
-   
+    color: #ff9d00;
 }
 
-.foto-isi1 h1{
+.foto-isi1 h1 {
     font-size: 30px;
 }
 
-.forto-container{
+.forto-container {
+    
+    margin: auto;
     height: 60%;
-    width: auto;
     display: flex;
-    padding: 5px;
+    padding: 30px;
     background-color: #ac0000;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.forto-isi h1{
+.forto-isi h1 {
     font-size: 30px;
     color: white;
 }
 
-.forto-isi{
+.forto-isi {
     display: inline;
     margin: auto;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
-.foto-contb{
-    margin-bottom: 100px; 
-    height: auto;
-    height: 80%;
-    width: auto;
-    display: flex;
-    padding: 5px;
-    background-color: #0e0e0e;
-    justify-content: space-between; 
-    align-items: center; 
+.foto-contb {
     
-}
-
-.foto-isi2{
-    margin-left: 50px;
-    border-radius: 30px;
-    background-color: #161616;
-    font-size: 20px;
-    padding: 30px 60px;
+    margin: auto;
+    margin-bottom: 100px;
+    height: 80%;
     display: flex;
-    text-align: left;
-    color: rgb(255, 153, 0);
-    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.5);
-   
+    padding: 70px;
+    background-color: #0e0e0e;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
 
 
 /* send email */
 
-.sosial h1{
+.sosial h1 {
     font-size: 35px;
-    color: rgb(255, 0, 0);
+    color: #ff0000;
 }
-.sosial i{
-    color: rgb(255, 149, 0);
+
+.sosial i {
+    color: #ff9500;
 }
-.sosial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; 
-    margin-right: 30%;
-}
+
+
 
 .sosial a {
     font-weight: bold;
     font-size: 20px;
     color: white;
     text-decoration: none;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     transition: color 0.25s;
 }
 
-.sosial a:hover{
+.sosial a:hover {
     color: orange;
     animation: color 12s ease-in-out infinite;
 }
 
-
 footer {
     background-color: #1d1d1d;
-    color: rgb(255, 149, 0);
+    color: #ff9500;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
     left: 0;
     font-size: 15px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
+@media only screen and (max-width: 1920px ) {
+    .content-d h1 {
+        margin: auto;
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+    .pg-l p1 {
+        margin: auto;
+        border-bottom: 5px solid #808080;
+        padding: 100px ;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        text-align: left;
+    }
+    
+    .pg-l p2 {
+        margin: auto;
+        padding: 100px;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        text-align: left;
+    }
+    
+    .pg-l p3 {
+        margin: auto;
+        border-bottom: 5px solid #808080;
+        border-left: white;
+        padding: 100px;
+        font-size: 15px;
+        color: #fff;
+        display: flex;
+        text-align: left;
+    }
+    .cont-skill p {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        height: 70px;
+    }
+
+    .foto-isi1 h1 {
+        font-size: 40px;
+    }
+
+    .tabel-3d td {
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+        padding: 40px;
+        border-bottom: 1px solid #6e6e6e;
+    }
+
+    .content-d {
+        justify-content: center;
+        margin: auto;
+        border-left: 5px solid #ff0000;
+        border-right: 5px solid #ff0000;
+        font-size: 20px;
+        padding: 20px 10px;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .foto-isi2 {
+        margin-left: 20px;
+        border-radius: 30px;
+        background-color: #161616;
+        font-size: 20px;
+        padding: 30px 60px;
+        display: flex;
+        text-align: left;
+        color: #ff9900;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .sosial {
+    
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 1080px ) {
+    .content-d h1 {
+        margin: auto;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    .pg-l p1 {
+        border-bottom: 5px solid #808080;
+        padding: 100px ;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        text-align: left;
+    }
+    
+    .pg-l p2 {
+        padding: 100px;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        text-align: left;
+    }
+    
+    .pg-l p3 {
+        border-bottom: 5px solid #808080;
+        border-left: white;
+        padding: 100px;
+        font-size: 15px;
+        color: #fff;
+        display: flex;
+        text-align: left;
+    }
+
+    .cont-skill p {
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
+        height: 70px;
+    }
+
+    .foto-isi1 h1 {
+        font-size: 30px;
+    }
+
+    .tabel-3d td {
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+        border-bottom: 1px solid #6e6e6e;
+    }
+    .content-d {
+        justify-content: center;
+        margin: auto;
+        border-left: 5px solid #ff0000;
+        border-right: 5px solid #ff0000;
+        font-size: 15px;
+        padding: 20px 10px;
+        display: flex;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+   
+    .sosial {
+    
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+    
+
+    
+}
+
