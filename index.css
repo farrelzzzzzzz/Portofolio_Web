@@ -27,7 +27,7 @@ body {
 
 .call {
     font-family: 'Shenttpuro';
-    src: url('path/to/Shenttpuro.ttf') format('truetype');
+    src: url('img/Shenttpuro.ttf') format('truetype');
     font-size: 60px;
     color: #fff;
     padding: 30px 40px;
